@@ -4,22 +4,23 @@
     
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
-    <title>Python 2.7 Wiki</title>
+    <title>Python 2.7 Quick Reference</title>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="header">
-            <h1>Python 2.7 Wiki</h1>
+            <h1>Python 2.7 Quick Reference</h1>
         </div class="header">
         
         <div class="toc" id="top">
             <h2>Table of Contents</h2>
             <ul>
                 <li><a href="#operators">Operators</a></li>
-                <li><a href="#types">Types</a></li>
+                <li><a href="#types">Data Types</a></li>
                     <ul>
                         <li>Integers</li>
                         <li>Floats</li>
@@ -27,6 +28,7 @@
                     </ul>
                 <li><a href="#reserved">Reserved Words in Python</a></li>
                 <li><a href="#declare">Declaring a Variable</a></li>
+                <li><a href="#comments">Comments</a></li>
             </ul>
         </div>
         
@@ -56,11 +58,44 @@
                 <p>Modulus: &nbsp % &nbsp (returns remainder)</p>
                 <p>>>> 7 % 3</p>
                 <p>1</p>
-                <span><a href="#top">Back to top</a></span>
+                <a href="#top">Back to top</a>
             </div>
             
             <div class="subject" id="types">
                 <h3>Data Types</h3>
+                <p>
+                    Integers - Ordinal number values.  Integer division only performs floor
+                    division (see Floor Division in Operators above)
+                </p>
+                <p>
+                    Floats - Decimal values.  Integer division can be induced to floating point
+                    division by including a float.
+                </p>
+                <p>>>> 11 / 2.0</p>
+                <p>5.5</p>
+                <p>
+                    Important to be mindful of order of operations. Be careful mixing integers
+                    and floats.  This can result in unexpected values.
+                </p>
+                <p>>>> 7 / 2 * 3</p>
+                <p>9</p>
+                <p>
+                    7 / 2 is integer division and equals 3, not 3.5.  3 * 3 = 9.
+                    This behavior is different in Python 3 where 7 / 2 = 3.5 unless
+                    the // operator is used.
+                </p>
+                <p>
+                    Strings - Character values.  Strings can be declared with " or ' and
+                    concatenated with the + operator.
+                </p>
+                <p>>>>'string1' + "string2"</p>
+                <p>'string1string2'</p>
+                <p>The new line character, \n, in a string results in a line break </p>
+                <p>>>>name = raw_input('Question?\n')</p>
+                <p>Question?</p>
+                <p>_</p>
+                <p>\n executes a carriage return and input cursor goes to the next line.</p>
+                <a href="#top">Back to top</a>
                 
             </div>
             <div class="subject" id="reserved">
@@ -69,6 +104,7 @@
                     Words with pre-existing functionality in python that cannot be used
                     to name variables.
                 </p>
+                
                 <table id="resTable">
                     <tr>
                         <th>and</th> 
@@ -81,8 +117,8 @@
                         <th>del</th>
                         <th>elif</th> 
                         <th>else</th> 
-                    </tr>
-                    <tr>
+                    <!--</tr>-->
+                    <!--<tr>-->
                         <th>except</th> 
                         <th>exec</th> 
                         <th>finally</th> 
@@ -93,8 +129,8 @@
                         <th>import</th>
                         <th>in</th> 
                         <th>is</th> 
-                    </tr>
-                    <tr>
+                    <!--</tr>-->
+                    <!--<tr>-->
                         <th>lambda</th> 
                         <th>not</th> 
                         <th>or</th> 
@@ -105,26 +141,33 @@
                         <th>try</th>
                         <th>while</th> 
                         <th>with</th> 
-                    </tr>
-                    <tr>
+                    <!--</tr>
+                    <tr>-->
                         <th>yield</th>
                     </tr>
                 </table>
-                <span><a href="#top">Back to top</a></span>
+                <a href="#top">Back to top</a>
             </div>
             
             <div id="declare" class="subject">
                 <h3>Declaring a Variable</h3>
                 <p>
                     Variable names can be comprised of letters, numbers and underscores ( _ ).
-                    To declare a variable:
+                    Variables must also start with a letter and not a number or underscore.  To declare a variable:
                 </p>
                 <p>var_name1 = value</p>
                 <br>
                 <p>>>> x = 3</p>
                 <p>>>> x</p>
                 <p>3</p>
-                <span><a href="#top">Back to top</a></span>
+                <a href="#top">Back to top</a>
+            </div>
+            
+            <div id="comments" class="subject">
+                <h3>Comments</h3>
+                <p>To declare comments precede text with # for interpreter to ignore the text.</p>
+                <p>count = 0 &nbsp #Initialize count variable
+                <a href="#top">Back to top</a>
             </div>
             
             

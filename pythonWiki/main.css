@@ -35,6 +35,10 @@ h3 {
     border: 2px solid grey;
 }
 
+.toc ul {
+    list-style-type: none;
+}
+
 .toc h2 {
     text-align: center;
     text-decoration: underline;
@@ -55,6 +59,7 @@ h3 {
 
 .subject p {
     margin-left: 10%;
+    margin-right: 10%;
 }
 
 .subject h3 {
@@ -62,15 +67,30 @@ h3 {
 }
 
 .subject a {
+    display: inline-block;
     margin-left: 80%;
 }
 
 #resTable {
+    width: 80%;
     margin: auto;    /* indent table toward the right */
 }
 
 #resTable th {
+    display: inline-block;
     color: orange;
+    padding: 0 3%;
     width: 3rem;            /* increase cell size for spacing btwn words */
     text-align: left;       /* line up words along left side, default is center align */
+}
+
+@media (max-width: 950px) {
+    .toc {
+        display: block;
+        float: none;
+        width: 40%;
+        margin: auto;
+        margin-top: 3%;
+    }
+    
 }
