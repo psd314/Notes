@@ -7,6 +7,11 @@ h3 {
     text-decoration: underline;
 }
 
+footer {
+    margin: 0;
+    padding: 2.5% 0;
+}
+
 .wrapper {
     margin: auto;
     padding: 0;
@@ -16,7 +21,7 @@ h3 {
 }
 
 
-.header  {
+.header, footer {
     margin: auto;
     background-color: seagreen;
     text-align:center;
@@ -24,6 +29,8 @@ h3 {
     width: 100%;
     color: white;
 }
+
+
 
 .toc {
     display: inline-block;
