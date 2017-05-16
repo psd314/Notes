@@ -30,7 +30,26 @@
                 <li><a href="#declare">Declaring a Variable</a></li>
                 <li><a href="#comments">Comments</a></li>
                 <li><a href="#ifelse">Conditional Statements</a></li>
+                    <ul>
+                        <li>if</li>
+                        <li>else</li>
+                        <li>elif</li>
+                    </ul>
                 <li><a href="#catch">Catching Exceptions</a></li>
+                <li><a href="#built-in">Built-In Functions</a></li>
+                <li><a href="#customfx">Custom Functions</a></li>
+                <li><a href="#while">While Loops</a></li>
+                <li><a href="#forloop">For Loops</a></li>
+                    <ul>
+                        <li>Single Iteration</li>
+                        <li>Double Iteration</li>
+                    </ul>
+                <li><a href="#strings">Working With Strings</a></li>
+                <li><a href="#files">Working With Files</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#dict">Dictionaries</a></li>
+                <li><a href="#tuples">Tuples</a></li>
+                <li><a href="#regexp">Regular Expressions</a></li>
             </ul>
         </div>
         
@@ -42,26 +61,33 @@
                 <p><b><u>Additon:</u></b> &nbsp +</p>
                 <p>>>> 3 + 5</p>
                 <p>8</p>
+                <br>
                 <p><b><u>Subtraction:</u></b> &nbsp -</p>
                 <p>>>> 10 - 3</p>
                 <p>7</p>
+                <br>
                 <p><b><u>Multiplication:</u></b> &nbsp *</p>
                 <p>>>> 12 * 8</p>
                 <p>96</p>
+                <br>
                 <p><b><u>Division:</u></b> &nbsp /</p>
                 <p>>>>35.0 / 7.0</p>
                 <p>5.0</p>
+                <br>
                 <p><b><u>Exponentiation:</u></b> &nbsp **</p>
                 <p>>>> 5 ** 5</p>
                 <p>3125</p>
+                <br>
                 <p><b><u>Floor Division:</u></b> &nbsp // &nbsp (integer division without remainder)</p>
                 <p>>>> 7 // 3</p>
                 <p>2</p>
+                <br>
                 <p><b><u>Modulus:</u></b> &nbsp % &nbsp (returns remainder)</p>
                 <p>>>> 7 % 3</p>
                 <p>1</p>
+                <br>
                 <p><b><u>Comparison Operators:</u></b></p>
-                    <ul>
+                    <ul class="indent">
                         <li>Equivalency: &nbsp ==</li>
                         <li>Not equal to: &nbsp!=</li>
                         <li>Greater than: &nbsp ></li>
@@ -70,7 +96,7 @@
                         <li>Less than or equal to: &nbsp <=</li>
                     </ul>
                 <p><b><u>Logical Operators</u></b></p>
-                    <ul>
+                    <ul class="indent">
                         <li>and</li>
                         <li>or</li>
                         <li>not</li>
@@ -84,6 +110,7 @@
                     <b><u>Integers</u></b> - Ordinal number values.  Integer division only performs floor
                     division (see Floor Division in Operators above)
                 </p>
+                <br>
                 <p>
                     <b><u>Floats</u></b> - Decimal values.  Integer division can be induced to floating point
                     division by including a float.
@@ -102,6 +129,7 @@
                     the // operator is used.
                 </p>
                 <p>
+                <br>
                     <b><u>Strings</u></b> - Character values.  Strings can be declared with " or ' and
                     concatenated with the + operator.
                 </p>
@@ -172,11 +200,14 @@
                     Variable names can be comprised of letters, numbers and underscores ( _ ).
                     Variables must also start with a letter and not a number or underscore.  To declare a variable:
                 </p>
+                <br>
                 <p>var_name1 = value</p>
                 <br>
                 <p>>>> x = 3</p>
                 <p>>>> x</p>
                 <p>3</p>
+                <br>
+                <p>variable = None &nbsp (declares variable as a null value)</p>
                 <a href="#top">Back to top</a>
             </div>
             
@@ -194,23 +225,28 @@
                     Must end if conditional statement with a semicolon.  Indent all code
                     to be executed under the condition then de-indent after the code block to continue.
                 </p>
+                <br>
                 <p>if 5 > 0:</p>
                 <p> &nbsp &nbsp print True</p>
+                <br>
                 <p><b><u>If Else</u></b></p>
                 <p>
                     Else conditional statement must also end with a semicolon.  Indent all code
                     to be executed under the condition then de-indent after the code block to continue.
                 </p>
+                <br>
                 <p>if 5 > x:</p>
                 <p> &nbsp &nbsp print True</p>
                 <p>else:</p>
                 <p>&nbsp &nbsp print False</p>
+                <br>
                 <p><b><u>Else If</u></b></p>
                 <p>
                     Keyword elif used to declare conditional statement which must end with a semicolon.  Indent all code
                     to be executed under the condition then de-indent after the code block to continue.
                     elif can be chained with additional elif's, with else or can be the ending condition.
                 </p>
+                <br>
                 <p>if 5 > x:</p>
                 <p> &nbsp &nbsp print 'Greater than'</p>
                 <p>elif 5 < x:</p>
@@ -227,27 +263,108 @@
                     regarding when the <b>try</b> fails.  quit(), exit() and <b>continue</b> can be used
                     to control exception behavior when an error is thrown.
                 </p>
+                <br>    
                 <p>answer = raw_input("Enter a number: ")</p>
                 <p>try:</p>
                 <p> &nbsp &nbsp numCheck = float(answer)</p>
                 <p>except:</p>
                 <p> &nbsp &nbsp print 'Please enter a number'</p>
                 <p>exit()</p>
+                <br>
                 <p>Code continues if user enters a number and exits if the user enters any other characters or symbols</p>
                 <a href="#top">Back to top</a>
             </div>
             
-            <div id="comments" class="subject">
-                <h3>Comments</h3>
-                <p>To declare comments precede text with # for interpreter to ignore the text.</p>
-                <p>count = 0 &nbsp #Initialize count variable</p>   
+            <div id="built-in" class="subject">
+                <h3>Built-In Functions</h3>
+                <p>text.</p>
+                <p>example</p>   
                 <a href="#top">Back to top</a>
             </div>
             
-            <div id="comments" class="subject">
-                <h3>Comments</h3>
-                <p>To declare comments precede text with # for interpreter to ignore the text.</p>
-                <p>count = 0 &nbsp #Initialize count variable</p>   
+            <div id="customfx" class="subject">
+                <h3>Custom Functions</h3>
+                <br>
+                <p class="bul">Declaring Custom Functions</p>
+                <p>Code block must be indented.  Remove indent after code block is completed.</p><br>
+                <p>def functionName (args):</p>
+                <p>&nbsp &nbsp &nbsp code block</p>
+                <br>
+                <p class="bul">Importing Custom Functions</p>
+                <br>
+                <p>>>> import fileName</p>
+                <p>>>> fileName.ext.functionName(args)</p>
+                <br>
+                <a href="#top">Back to top</a>
+            </div>
+            
+            <div id="while" class="subject">
+                <h3>While Loops</h3>
+                <p>text.</p>
+                <p>example</p>   
+                <a href="#top">Back to top</a>
+            </div>
+            
+            <div id="forloop" class="subject">
+                <h3>For Loops</h3>
+                <p>text.</p>
+                <p>example</p>   
+                <a href="#top">Back to top</a>
+            </div>
+            
+            <div id="strings" class="subject">
+                <h3>Working With Strings</h3>
+                <p>text.</p>
+                <p>example</p>   
+                <a href="#top">Back to top</a>
+            </div>
+            
+            <div id="files" class="subject">
+                <h3>Working With Files</h3>
+                <p>text.</p>
+                <p>example</p>   
+                <a href="#top">Back to top</a>
+            </div>
+            
+            <div id="lists" class="subject">
+                <h3>Lists</h3>
+                <p>text.</p>
+                <p>example</p>   
+                <a href="#top">Back to top</a>
+            </div>
+            
+            <div id="dict" class="subject">
+                <h3>Dictionaries</h3>
+                <p>text.</p>
+                <p>example</p>   
+                <a href="#top">Back to top</a>
+            </div>
+            
+            <div id="tuples" class="subject">
+                <h3>Tuples</h3>
+                <p>text.</p>
+                <p>example</p>   
+                <a href="#top">Back to top</a>
+            </div>
+            
+            <div id="regexp" class="subject">
+                <h3>Regular Expressions</h3>
+                <p>text.</p>
+                <p>example</p>   
+                <a href="#top">Back to top</a>
+            </div>
+            
+            <div id=" " class="subject">
+                <h3>Subject</h3>
+                <p>text.</p>
+                <p>example</p>   
+                <a href="#top">Back to top</a>
+            </div>
+            
+            <div id=" " class="subject">
+                <h3>Subject</h3>
+                <p>text.</p>
+                <p>example</p>   
                 <a href="#top">Back to top</a>
             </div>
             

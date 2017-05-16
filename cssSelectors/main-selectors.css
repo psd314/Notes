@@ -1,0 +1,244 @@
+/* Base Styles -------------------- */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Nunito', sans-serif;
+	color: #384047;
+	padding: 40px 0 60px;
+}
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px dotted rgba(0, 0, 0, 0.2);
+  margin: 50px 0;
+}
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+form {
+	margin-bottom: 60px;
+}
+
+/* Form Fields -------------------- */
+
+input,
+textarea {
+  font-size: 1em;
+  color: black;
+  font-weight: 300; 
+  width: 100%;
+  border: none;
+  height: auto;
+  padding: 15px;
+  outline: 0;
+  margin-bottom: 1.2em;
+  border-radius: .3em;
+  border-bottom: 3px solid rgba(0,0,0, 0.05);
+  background-color: #e8eeef;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em; 
+}
+
+/* Media Queries -------------------- */
+
+@media (max-width: 768px) {
+	#container {
+		width: 92%;
+	}
+}
+
+/*[class="form-contact"] {
+    padding: 20px 24px;
+    background: #f4f7f8;
+}
+
+div[id="container"] {
+    max-width: 500px;
+    margin: auto;
+}*/
+
+.form-contact {
+    padding: 20px 24px;
+    background: #f4f7f8;
+}
+
+#container {
+    max-width: 500px;
+    margin: auto;
+}
+
+input[type="email"] {
+    background: #fdfee6;
+}
+
+.button {
+    cursor: pointer;
+    font-size: .875em;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+
+a[target="_blank"] {
+    color: #39add1;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+/*** DRY classes ***/
+
+.br {
+    border-radius: 0.5em;
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto 2em;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+#logo {
+    height: 150px;
+    width: 150px;
+}
+
+.default {
+    background-color: #52bab3;
+}
+
+.error {
+    background-color: #ff784f;
+}
+
+@media (min-width: 769px) {
+    .inline {
+        width: auto;
+        display: inline-block;
+    }
+    
+    .button + .button {
+        margin-left: 20px;
+    }
+}
+
+
+form > a {
+    font-size: 0.7em;
+}
+
+h1 ~ label {
+    background: tomato;
+    color: white;
+    padding: 5px;
+}
+
+/*li:first-child {
+    background: #52bab3;
+    color: white;
+}
+
+li:last-child {
+    border: dotted;
+}
+
+:only-child {
+    color: #52bab3;
+    font-size: 1.5rem;
+}
+
+li:empty {
+    background-color: tomato;
+}*/
+
+.flex {
+    display: inline-flex;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    height: 450px;
+    flex-grow: 0;
+}
+
+div .item {
+    background-color: orange;
+    border: 2px solid grey;
+    flex: 0 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
