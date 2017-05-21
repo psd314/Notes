@@ -1,17 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: lightgrey;
+    font-family: sans-serif;
 }
 
-h3 {
-    text-decoration: underline;
+a {
+    text-decoration: none;
 }
 
 footer {
     margin: 0;
     padding: 2.5% 0;
+}  
+
+.bold {
+    font-weight: bold;
 }
-/* BORDER BOX??????? */
+
+.btt {
+    background-color: darkgrey;
+    color: white;
+    padding: 2%;
+}
+
 .wrapper {
     margin: auto;
     padding: 0;
@@ -48,7 +63,6 @@ footer {
 
 .toc h2 {
     text-align: center;
-    text-decoration: underline;
 }
 
 .topics {
@@ -62,6 +76,7 @@ footer {
     padding: 1% 0;    /* vertical space between subjects */
     margin: 6.67% 0;
     background-color: white;
+    border-radius: 3em;
 }
 
 ul[class="indent"] {
@@ -81,25 +96,26 @@ ul[class="indent"] {
 .subject a {
     display: inline-block;
     margin-left: 80%;
-}
-
-.bul {
-    font-weight: bold;
-    text-decoration: underline;
+    margin-bottom: 1%;
+    text-decoration: none;
+    border-radius: 2em;
 }
 
 #resTable {
-    width: 80%;
+    width: 90%;
     margin: auto;    /* indent table toward the right */
 }
 
 #resTable th {
     display: inline-block;
     color: orange;
-    padding: 0 3%;
+    padding: 0 10%;
+    margin: 0 2.5%;
     width: 3rem;            /* increase cell size for spacing btwn words */
     text-align: left;       /* line up words along left side, default is center align */
 }
+
+
 
 @media (max-width: 950px) {
     .toc {

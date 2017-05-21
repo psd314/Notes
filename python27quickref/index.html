@@ -37,6 +37,16 @@
                     </ul>
                 <li><a href="#catch">Catching Exceptions</a></li>
                 <li><a href="#built-in">Built-In Functions</a></li>
+                    <ul>
+                        <li>dir()</li>
+                        <li>len()</li>
+                        <li>max()</li>
+                        <li>min()</li>
+                        <li>print</li>
+                        <li>range()</li>
+                        <li>sum()</li>
+                        <li>type()</li>
+                    </ul>
                 <li><a href="#customfx">Custom Functions</a></li>
                 <li><a href="#while">While Loops</a></li>
                 <li><a href="#forloop">For Loops</a></li>
@@ -58,35 +68,35 @@
             
             <div class="subject" id="operators">
                 <h3>Operators</h3>
-                <p><b><u>Additon:</u></b> &nbsp +</p>
+                <p><b>Additon:</b> &nbsp +</p>
                 <p>>>> 3 + 5</p>
                 <p>8</p>
                 <br>
-                <p><b><u>Subtraction:</u></b> &nbsp -</p>
+                <p><b>Subtraction:</b> &nbsp -</p>
                 <p>>>> 10 - 3</p>
                 <p>7</p>
                 <br>
-                <p><b><u>Multiplication:</u></b> &nbsp *</p>
+                <p><b>Multiplication:</b> &nbsp *</p>
                 <p>>>> 12 * 8</p>
                 <p>96</p>
                 <br>
-                <p><b><u>Division:</u></b> &nbsp /</p>
+                <p><b>Division:</b> &nbsp /</p>
                 <p>>>>35.0 / 7.0</p>
                 <p>5.0</p>
                 <br>
-                <p><b><u>Exponentiation:</u></b> &nbsp **</p>
+                <p><b>Exponentiation:</b> &nbsp **</p>
                 <p>>>> 5 ** 5</p>
                 <p>3125</p>
                 <br>
-                <p><b><u>Floor Division:</u></b> &nbsp // &nbsp (integer division without remainder)</p>
+                <p><b>Floor Division:</b> &nbsp // &nbsp (integer division without remainder)</p>
                 <p>>>> 7 // 3</p>
                 <p>2</p>
                 <br>
-                <p><b><u>Modulus:</u></b> &nbsp % &nbsp (returns remainder)</p>
+                <p><b>Modulus:</b> &nbsp % &nbsp (returns remainder)</p>
                 <p>>>> 7 % 3</p>
                 <p>1</p>
                 <br>
-                <p><b><u>Comparison Operators:</u></b></p>
+                <p><b>Comparison Operators:</b></p>
                     <ul class="indent">
                         <li>Equivalency: &nbsp ==</li>
                         <li>Not equal to: &nbsp!=</li>
@@ -95,24 +105,24 @@
                         <li>Less than: &nbsp <</li>
                         <li>Less than or equal to: &nbsp <=</li>
                     </ul>
-                <p><b><u>Logical Operators</u></b></p>
+                <p><b>Logical Operators</b></p>
                     <ul class="indent">
                         <li>and</li>
                         <li>or</li>
                         <li>not</li>
                     </ul>
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div class="subject" id="types">
                 <h3>Data Types</h3>
                 <p>
-                    <b><u>Integers</u></b> - Ordinal number values.  Integer division only performs floor
+                    <b>Integers</b> - Ordinal number values.  Integer division only performs floor
                     division (see Floor Division in Operators above)
                 </p>
                 <br>
                 <p>
-                    <b><u>Floats</u></b> - Decimal values.  Integer division can be induced to floating point
+                    <b>Floats</b> - Decimal values.  Integer division can be induced to floating point
                     division by including a float.
                 </p>
                 <p>>>> 11 / 2.0</p>
@@ -130,7 +140,7 @@
                 </p>
                 <p>
                 <br>
-                    <b><u>Strings</u></b> - Character values.  Strings can be declared with " or ' and
+                    <b>Strings</b> - Character values.  Strings can be declared with " or ' and
                     concatenated with the + operator.
                 </p>
                 <p>>>>'string1' + "string2"</p>
@@ -140,7 +150,7 @@
                 <p>Question?</p>
                 <p>_</p>
                 <p>\n executes a carriage return and input cursor goes to the next line.</p>
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
                 
             </div>
             <div class="subject" id="reserved">
@@ -191,7 +201,7 @@
                         <th>yield</th>
                     </tr>
                 </table>
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="declare" class="subject">
@@ -208,19 +218,19 @@
                 <p>3</p>
                 <br>
                 <p>variable = None &nbsp (declares variable as a null value)</p>
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="comments" class="subject">
                 <h3>Comments</h3>
                 <p>To declare comments precede text with # for interpreter to ignore the text.</p>
                 <p>count = 0 &nbsp #Initialize count variable</p>   
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="ifelse" class="subject">
                 <h3>Conditional Statements</h3>
-                <p><b><u>If</u></b></p>
+                <p><b>If</b></p>
                 <p>
                     Must end if conditional statement with a semicolon.  Indent all code
                     to be executed under the condition then de-indent after the code block to continue.
@@ -229,7 +239,7 @@
                 <p>if 5 > 0:</p>
                 <p> &nbsp &nbsp print True</p>
                 <br>
-                <p><b><u>If Else</u></b></p>
+                <p><b>If Else</b></p>
                 <p>
                     Else conditional statement must also end with a semicolon.  Indent all code
                     to be executed under the condition then de-indent after the code block to continue.
@@ -240,7 +250,7 @@
                 <p>else:</p>
                 <p>&nbsp &nbsp print False</p>
                 <br>
-                <p><b><u>Else If</u></b></p>
+                <p><b>Else If</b></p>
                 <p>
                     Keyword elif used to declare conditional statement which must end with a semicolon.  Indent all code
                     to be executed under the condition then de-indent after the code block to continue.
@@ -253,7 +263,7 @@
                 <p>&nbsp &nbsp print 'Less than'</p>
                 <p>else:</p>
                 <p>&nbsp &nbsp print 'Equal to'</p>
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="catch" class="subject">
@@ -272,100 +282,178 @@
                 <p>exit()</p>
                 <br>
                 <p>Code continues if user enters a number and exits if the user enters any other characters or symbols</p>
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="built-in" class="subject">
                 <h3>Built-In Functions</h3>
-                <p>text.</p>
-                <p>example</p>   
-                <a href="#top">Back to top</a>
+                <p class="bold">append()</p>
+                <p>Returns the length of an object such as a string (includes white spaces), array, list, dictionary or tuple.</p>
+                <br>
+                <p>>>> x = "string length"</p>
+                <p>>>> len(x)</p>
+                <p>13</p>
+                <br>
+                <p class="bold">len()</p>
+                <p>Returns the length of an object such as a string (includes white spaces), array, list, dictionary or tuple.</p>
+                <br>
+                <p>>>> x = "string length"</p>
+                <p>>>> len(x)</p>
+                <p>13</p>
+                <br>
+                <p class="bold">print</p>
+                <p>Prints ouptut to screen</p>
+                <br>
+                <p>>>> print "string"</p>
+                <p>string</p>
+                <br>
+                <p class="bold">range()</p>
+                <p>Can take a starting and ending numbers and a step parameter (default is 1) and returns
+                a list of numbers from the starting number up to, but not including the ending number
+                in increments specified by the step parameter.</p>
+                <br>
+                <p>>>> range(0,5)</p>
+                <p>[0, 1, 2, 3, 4]</p>
+                <p>>>> range(20, 10, -2)</p>
+                <p>[20, 18, 16, 14, 12]</p>
+                <br>
+                <p class="bold">type()</p>
+                <p>Returns type of a given object or variable</p>
+                <br>
+                <p>>>> x = 5</p>
+                <p>>>> type(x)</p>
+                <p>&#60type 'int'></type></p>
+                <br>
+                <p class="bold"></p>
+                <p class="bold"></p>
+                <p class="bold"></p>
+                <p class="bold"></p>
+                <p class="bold"></p>
+                <p class="bold"></p>
+                <p class="bold"></p>
+                <p class="bold"></p>
+                <p class="bold"></p>
+                <p class="bold"></p>
+                <p class="bold"></p>
+                <p class="bold"></p>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="customfx" class="subject">
                 <h3>Custom Functions</h3>
                 <br>
-                <p class="bul">Declaring Custom Functions</p>
+                <p class="bold">Declaring Custom Functions</p>
                 <p>Code block must be indented.  Remove indent after code block is completed.</p><br>
                 <p>def functionName (args):</p>
                 <p>&nbsp &nbsp &nbsp code block</p>
                 <br>
-                <p class="bul">Importing Custom Functions</p>
+                <p class="bold">Importing Custom Functions</p>
                 <br>
                 <p>>>> import fileName</p>
                 <p>>>> fileName.ext.functionName(args)</p>
                 <br>
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="while" class="subject">
                 <h3>While Loops</h3>
                 <p>text.</p>
                 <p>example</p>   
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="forloop" class="subject">
                 <h3>For Loops</h3>
                 <p>text.</p>
                 <p>example</p>   
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="strings" class="subject">
                 <h3>Working With Strings</h3>
-                <p>text.</p>
+                <p>Declaring</p>
+                <p>Indexing</p>
+                <p>Slicing</p>
+                <p>Concatenating</p>
+                <p>Format Operator - %</p>
+                <p>New Line Character - \n</p>
+                <p>Searching with 'in'</p>
+                <p>find()</p>
+                <p>lower()</p>
+                <p>replace()</p>
+                <p>repr</p>
+                <p>split()</p>
+                <p>startswith()</p>
+                <p>upper()</p>
                 <p>example</p>   
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="files" class="subject">
                 <h3>Working With Files</h3>
                 <p>text.</p>
                 <p>example</p>   
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="lists" class="subject">
                 <h3>Lists</h3>
+                <p>Definition, mutable</p>
+                <p>Declaring (include empty lists)</p>
+                <p>indexing</p>
+                <p>changing values</p>
+                <p>concatenating</p>
+                <p>Aliasing</p>
+                <p>iterating in for loops</p>
+                <p>append()</p>
+                <p>del()</p>
+                <p>join()</p>
+                <p>max()</p>
+                <p>min()</p>
+                <p>len()</p>
+                <p>pop()</p>
+                <p>range()</p>
+                <p>remove()</p>
+                <p>sort()</p>
+                <p>sum()</p>
                 <p>text.</p>
                 <p>example</p>   
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="dict" class="subject">
                 <h3>Dictionaries</h3>
                 <p>text.</p>
                 <p>example</p>   
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="tuples" class="subject">
                 <h3>Tuples</h3>
                 <p>text.</p>
                 <p>example</p>   
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id="regexp" class="subject">
                 <h3>Regular Expressions</h3>
                 <p>text.</p>
                 <p>example</p>   
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id=" " class="subject">
                 <h3>Subject</h3>
                 <p>text.</p>
                 <p>example</p>   
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             <div id=" " class="subject">
                 <h3>Subject</h3>
                 <p>text.</p>
                 <p>example</p>   
-                <a href="#top">Back to top</a>
+                <a href="#top" class="btt">Back to top</a>
             </div>
             
             
