@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    
+    font-family: sans-serif;
+}
+header {
+    background-color: seagreen;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+h2 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    margin-top: 95vh;
+    background-color: seagreen;
+    color: white;
+}
+
+.toc {
+    float: left;
+}
+
+
+@media (min-width: 319px) {
+    body {
+        background-color: white;
+        font-size: 1.25rem;
+    }
+    
+    .toc {
+        width: 100%;
+        margin-top: 22.5%;
+    }
+    
+    .toc h2 {
+        text-align: center;
+    }
+    
+    .toc a {
+        display: inline-block;
+        padding: 5px 0;
+    }
+    
+}
