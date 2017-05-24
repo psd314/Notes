@@ -14,7 +14,7 @@ a {
 
 footer {
     margin: 0;
-    padding: 2.5% 0;
+    padding: 2% 0;
 }  
 
 .bold {
@@ -36,6 +36,7 @@ footer {
 }
 
 
+
 .header, footer {
     margin: auto;
     background-color: seagreen;
@@ -45,6 +46,9 @@ footer {
     color: white;
 }
 
+.header {
+    position: fixed;
+}
 
 
 .toc {
@@ -55,6 +59,9 @@ footer {
     margin-top: 2.6%;
     width: 15%;
     border: 2px solid grey;
+    border-radius: 3em;
+    position: fixed;
+    margin-top: 7.5%;
 }
 
 .toc ul {
@@ -115,6 +122,9 @@ ul[class="indent"] {
     text-align: left;       /* line up words along left side, default is center align */
 }
 
+#operators {
+    margin-top: 18.75%;
+}
 
 
 @media (max-width: 950px) {
