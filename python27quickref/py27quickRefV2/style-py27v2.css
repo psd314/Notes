@@ -24,21 +24,27 @@ a {
 }
 
 footer {
-    position: fixed;
     width: 100%;
     height: 5vh;
     text-align: center;
     margin-top: 95vh;
     background-color: seagreen;
     color: white;
+    position: fixed;
+}
+
+ul {
+    list-style: none;
 }
 
 .toc {
     float: left;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
 
-@media (min-width: 319px) {
+@media (max-width: 350px) {
     body {
         background-color: white;
         font-size: 1.25rem;
@@ -46,7 +52,49 @@ footer {
     
     .toc {
         width: 100%;
-        margin-top: 22.5%;
+        /*margin-top: 22.5%;*/
+    }
+    
+    .toc li {
+        text-align: left;
+    }
+    
+    .toc h2 {
+        text-align: center;
+    }
+    
+    .toc a {
+        display: inline-block;
+        padding: 7.5px 0;
+    }
+    
+    .toc ul {
+        padding-left: 12.5%;
+    }
+    
+}
+
+@media (min-width: 351px) {
+    body {
+        background-color: white;
+        font-size: 1rem;
+    }
+    
+    header {
+        height: 10%;
+    }
+    
+    header h2 {
+        padding: 16px 0;
+    }
+    
+    .toc {
+        width: 100%;
+        /*margin-top: 22.5%;*/
+    }
+    
+    .toc li {
+        text-align: left;
     }
     
     .toc h2 {
@@ -56,6 +104,49 @@ footer {
     .toc a {
         display: inline-block;
         padding: 5px 0;
+        font-size: 1.1rem;
     }
     
+    .toc ul {
+        padding-left: 7.5%;
+    }
+    
+}
+
+@media (max-width: 237px) {
+    header {
+        position: relative;
+        width: 100%;
+    }
+    .toc {
+        margin-top: 1vh;
+    }
+}
+
+@media (min-width: 520px) {   
+    
+    .column1, .column2 {
+        width: 40%;
+        height: 100%;
+        display: inline-block;
+        float: left;
+    }
+    
+    .toc ul {
+        padding-left: 20%;
+    }   
+}
+
+@media (min-width: 729px) {
+    
+    .toc {
+        max-width: 583px;
+        margin-left: calc((100% - 583px)*.5);
+    }
+}
+
+@media (min-width: 300px) and (max-width: 800px) and (orientation: landscape) {
+    header{
+        height: 12.5vh;
+    }
 }
